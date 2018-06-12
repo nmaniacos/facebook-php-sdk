@@ -409,9 +409,13 @@ abstract class BaseFacebook
     if (empty($access_token_response)) {
       return false;
     }
-
-    $response_params = array();
-    parse_str($access_token_response, $response_params);
+    
+    // tha api doesn't return anymore string
+    // $response_params = array();
+    // parse_str($access_token_response, $response_params);
+    
+    // it returns json and we decode it
+    $response_params = json_decode($access_token_response,true);
 
     if (!isset($response_params['access_token'])) {
       return false;
