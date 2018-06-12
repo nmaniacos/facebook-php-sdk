@@ -4,11 +4,11 @@
     "keywords": ["facebook", "sdk"],
     "type": "library",
     "homepage": "https://github.com/nmaniacos/facebook-php-sdk",
-    "license": "Apache2",
+    "license": "Apache-2.0",
     "authors": [
         {
-            "name": "Facebook",
-            "homepage": "https://github.com/facebook/facebook-php-sdk/contributors"
+            "name": "The SP team",
+            "homepage": "https://github.com/nmaniacos/facebook-php-sdk/contributors"
         }
     ],
     "require": {
